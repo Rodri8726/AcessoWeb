@@ -169,6 +169,15 @@ textarea:focus-visible {
     outline-offset: 3px;
 }
 
+.alto-contraste {
+    --cor-fundo: #000000;
+    --cor-superficie: #000000;
+    --cor-primaria: #005fcc;
+    --cor-texto: #ffffff;
+    --cor-texto-secundario: #ffffff;
+    --cor-borda: #ffffff;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
