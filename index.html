@@ -17,10 +17,14 @@
 
 <body>
 
+<a class="skip-link" href="#conteudo-principal">
+    Ir para o conteúdo principal
+</a>
+
     <header>
         <h1>AcessoWeb</h1>
 
-        <nav>
+        <nav aria-label="Navegação principal">
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#acessibilidade">Acessibilidade</a></li>
@@ -30,7 +34,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="conteudo-principal">
 
         <section id="inicio">
             <h2>Acessibilidade digital para todos</h2>
@@ -89,6 +93,7 @@
                         type="text"
                         id="nome"
                         name="nome"
+                        autocomplete="name"
                         required
                     >
                 </div>
@@ -99,6 +104,7 @@
                         type="email"
                         id="email"
                         name="email"
+                        autocomplete="email"
                         required
                     >
                 </div>
