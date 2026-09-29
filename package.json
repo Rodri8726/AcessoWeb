@@ -4,9 +4,9 @@
   "description": "O AcessoWeb é um projeto acadêmico desenvolvido para aplicar conceitos de desenvolvimento front-end, versionamento de código, acessibilidade digital, otimização e publicação de uma aplicação web.",
   "main": "index.js",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Rodri8726/AcessoWeb#readme",
   "devDependencies": {
+    "sharp": "^0.35.5",
     "vite": "^8.3.1"
   }
 }
