@@ -4,6 +4,14 @@ O **AcessoWeb** é um projeto acadêmico desenvolvido para aplicar conceitos de 
 
 O projeto apresenta informações sobre acessibilidade digital e boas práticas para tornar conteúdos web mais acessíveis, utilizando uma interface responsiva e recursos voltados à navegação e interação por diferentes usuários.
 
+## Aplicação publicada
+
+A versão de produção do AcessoWeb está disponível no GitHub Pages:
+
+https://rodri8726.github.io/AcessoWeb/
+
+O processo de publicação é automatizado por meio do GitHub Actions. A cada atualização integrada à branch `main`, o workflow executa a instalação das dependências, gera o build de produção com Vite e publica o conteúdo da pasta `dist` no GitHub Pages.
+
 ## Tecnologias utilizadas
 
 - HTML5
@@ -15,6 +23,8 @@ O projeto apresenta informações sobre acessibilidade digital e boas práticas 
 - Sharp
 - Git
 - GitHub
+- GitHub Actions
+- GitHub Pages
 
 ## Acessibilidade
 
@@ -64,6 +74,9 @@ npm run preview
 
 ```text
 AcessoWeb/
+├── .github/
+│   └── workflows/
+│       └── main.yml
 ├── css/
 │   └── style.css
 ├── images/
@@ -74,7 +87,8 @@ AcessoWeb/
 ├── index.html
 ├── package.json
 ├── package-lock.json
-└── readme.md
+├── readme.md
+└── vite.config.mjs
 ```
 
 A pasta `dist` é gerada automaticamente durante o processo de build e não é versionada no repositório.
@@ -141,7 +155,7 @@ Nesse padrão:
 - `MINOR` indica novas funcionalidades compatíveis;
 - `PATCH` indica correções compatíveis com a versão existente.
 
-A versão **v1.0.0** corresponde à primeira versão estável planejada do AcessoWeb.
+A versão v1.0.0 corresponde à primeira versão estável do AcessoWeb.
 
 ## Autor
 
