@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="AcessoWeb: portal informativo sobre acessibilidade digital."
+    >
+
+    <title>AcessoWeb | Acessibilidade Digital</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#conteudo-principal">
+    Ir para o conteúdo principal
+</a>
+
+    <header>
+        <h1>AcessoWeb</h1>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#acessibilidade">Acessibilidade</a></li>
+                <li><a href="#boas-praticas">Boas práticas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    <button
+        id="botao-contraste"
+        type="button"
+        aria-pressed="false"
+    >
+        Ativar alto contraste
+    </button>
+    </header>
+
+    <main id="conteudo-principal">
+
+        <section id="inicio">
+            <h2>Acessibilidade digital para todos</h2>
+
+            <p>
+                O AcessoWeb é um portal informativo criado para apresentar
+                conceitos e boas práticas de acessibilidade na web.
+            </p>
+            <img
+                class="imagem-destaque"
+                src="/images/acessibilidade-digital.webp"
+                alt="Ilustração sobre inclusão e recursos de acessibilidade digital"
+                width="1024"
+                height="576"
+            >    
+        </section>
+
+        <section id="acessibilidade">
+            <h2>O que é acessibilidade digital?</h2>
+
+            <p>
+                A acessibilidade digital busca permitir que diferentes
+                pessoas possam perceber, compreender, navegar e interagir
+                com conteúdos e serviços digitais.
+            </p>
+        </section>
+
+        <section id="boas-praticas">
+            <h2>Boas práticas</h2>
+
+            <article>
+                <h3>HTML semântico</h3>
+                <p>
+                    Elementos semânticos ajudam a organizar o conteúdo
+                    e tornam sua estrutura mais compreensível.
+                </p>
+            </article>
+
+            <article>
+                <h3>Navegação por teclado</h3>
+                <p>
+                    Elementos interativos devem poder ser utilizados
+                    sem depender exclusivamente do mouse.
+                </p>
+            </article>
+
+            <article>
+                <h3>Contraste visual</h3>
+                <p>
+                    Um contraste adequado entre texto e fundo facilita
+                    a leitura e a compreensão do conteúdo.
+                </p>
+            </article>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+
+            <form>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            AcessoWeb — Projeto acadêmico de Desenvolvimento Front-end.
+        </p>
+    </footer>
+
+    <script type="module" src="/js/script.js"></script>
+
+</body>
+
+</html>
